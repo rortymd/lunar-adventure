@@ -3,7 +3,8 @@
     font-family: "Hellenica";
     src: url("./Hellenica/Hellenica.eot");
     src: url("./Hellenica/Hellenica.eot?#iefix") format("embedded-opentype"),
-        url("./Hellenica/Hellenica.woff") format("woff"), url("./Hellenica/Hellenica.ttf") format("truetype");
+        url("./Hellenica/Hellenica.woff") format("woff"), 
+        url("./Hellenica/Hellenica.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
