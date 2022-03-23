@@ -1,5 +1,6 @@
 @import url("./tools.css");
 @import url("../components/header/header.css");
+@import url("../components/intro/intro.css");
 @import url("../components/stars/stars.css");
 
 
@@ -16,6 +17,11 @@
 
 html,
 body{
+    color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+}
+
+section{
+    overflow: hidden;
 }

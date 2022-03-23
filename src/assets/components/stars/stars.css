@@ -9,13 +9,9 @@
 }
 .regular-star {
     animation: regularStar 45s ease infinite;
-    top: 200px;
-    left: 50%;
 }
 .comet {
-    animation: comet 10s linear 2s infinite;
-    top: 145px;
-    left: -150px;
+    animation: comet 15s linear 2s infinite;
 }
 
 @keyframes blinkingStar {

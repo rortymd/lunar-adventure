@@ -2,9 +2,6 @@
 
 .header {
     background-color: #000000;
-    position: relative;
-    border: 3px solid yellow;
-    height: 500px;
 }
 
 .header__inner {
@@ -92,7 +89,7 @@ nav {
 /* STARS BEHAVIOUR */
 .header .blinking-star {
     top: 60px;
-    left: 75px;
+    left: -150px;
 }
 
 /* ANIMATIONS */
@@ -153,6 +150,10 @@ nav {
     }
     .header__nav-link:last-child a::after {
         background-color: #000000;
+    }
+    .header .blinking-star {
+        top: 30px;
+        left: 250px;
     }
 }
 

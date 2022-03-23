@@ -1,0 +1,136 @@
+.intro {
+    background-color: #000000;
+}
+.intro__inner {
+    display: flex;
+    padding: 215px 0 30px;
+    position: relative;
+}
+.intro__info {
+    /* width: 50%; */
+    padding-top: 35px;
+    /* border: 1px solid #fff; */
+}
+.intro__descr {
+    display: flex;
+    width: 75%;
+    margin-top: 45px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+}
+.intro__links {
+    margin-top: 40px;
+}
+.intro__links .button {
+    padding: 12px 40px;
+}
+.intro__links .btn-primary {
+    margin-right: 25px;
+    box-shadow: -4px 0 4px #ff9a00;
+}
+.intro__links .btn-primary:hover {
+    box-shadow: 0 0 5px #ff9a00;
+}
+
+.intro__inner .blinking-star:nth-of-type(1) {
+    width: 24px;
+    height: 24px;
+    animation-delay: 4s;
+    top: 75px;
+    right: -120px;
+}
+.intro__inner .blinking-star:nth-of-type(2) {
+    width: 40px;
+    height: 40px;
+    animation-delay: 2s;
+    top: 400px;
+    left: 600px;
+}
+.intro__inner .regular-star:nth-of-type(3) {
+    animation-delay: 2s;
+    top: 65px;
+    left: 280px;
+}
+.intro__inner .regular-star:nth-of-type(4) {
+    width: 32px;
+    height: 31px;
+    animation-delay: 3s;
+    top: 10px;
+    right: 320px;
+}
+.intro__inner .regular-star:nth-of-type(5) {
+    width: 16px;
+    height: 15px;
+    animation-delay: 5s;
+    top: 260px;
+    left: -40px;
+}
+.intro__inner .regular-star:nth-of-type(6) {
+    width: 36px;
+    height: 35px;
+    animation-delay: 1s;
+    bottom: 0;
+    left: -180px;
+}
+
+.intro__inner .comet {
+    top: 55px;
+    left: -100%;
+}
+
+
+@keyframes rotateIntroMoon {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+@media (max-width: 990px) {
+    .intro__descr {
+        font-size: 20px;
+    }
+}
+@media (max-width: 770px) {
+    .intro__inner {
+        padding: 150px 0 30px;
+    }
+    .intro__descr {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .intro__image{
+        margin-right: -200px;
+        animation: rotateIntroMoon 60s linear infinite;
+    }
+    .intro__inner .blinking-star:nth-of-type(2) {
+        top: 200px;
+        left: 80%;
+    }
+}
+@media (max-width: 580px){
+    .intro__inner {
+        padding: 75px 0 15px;
+    }
+    .intro__image{
+        margin-right: -290px;
+        margin-left: 15px;
+    }
+    .intro__descr {
+        margin-top: 25px;
+        font-size: 18px;
+    }
+    .intro__links {
+        margin-top: 25px;
+    }
+    .intro__links .button{
+        display: block;
+    }
+    .intro__links .btn-primary {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+}
