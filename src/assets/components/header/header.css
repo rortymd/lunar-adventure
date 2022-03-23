@@ -2,20 +2,22 @@
 
 .header {
     background-color: #000000;
+    position: relative;
+    border: 3px solid yellow;
+    height: 500px;
 }
 
 .header__inner {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    /* border: 1px solid #fff; */
+    position: relative;
 }
 
 /* LOGO */
 .header__logo {
     display: flex;
     align-items: center;
-    /* border: 1px solid #fff; */
 }
 .header__logo:hover .header__logo-img svg {
     animation: rotateMoon 0.5s ease;
@@ -87,16 +89,36 @@ nav {
     display: none;
 }
 
-@media (max-width: 990px){
-    .header__inner{
+/* STARS BEHAVIOUR */
+.header .blinking-star {
+    top: 60px;
+    left: 75px;
+}
+
+/* ANIMATIONS */
+@keyframes rotateMoon {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* DEVICE ADAPTATION */
+@media (max-width: 990px) {
+    .header__inner {
         padding-top: 30px;
     }
-    .header__nav-link{
+    .header__nav-link {
         margin-right: 25px;
     }
 }
 @media (max-width: 768px) {
-    .header__inner{
+    .header__inner {
         padding-top: 20px;
     }
     .header__nav-btn {
@@ -129,26 +151,13 @@ nav {
     .header__nav-link:last-child {
         margin-right: 25px;
     }
-    .header__nav-link:last-child a::after{
+    .header__nav-link:last-child a::after {
         background-color: #000000;
     }
 }
 
-@media (max-width: 580px){
-    .header__inner{
+@media (max-width: 580px) {
+    .header__inner {
         padding-top: 10px;
-    }
-}
-
-/* ANIMATIONS */
-@keyframes rotateMoon {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(-20deg);
-    }
-    100% {
-        transform: rotate(0deg);
     }
 }
