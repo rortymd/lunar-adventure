@@ -45,7 +45,7 @@
         font-size: 50px;
     }
 }
-@media (max-width: 770px){
+@media (max-width: 785px){
     .container{
         padding: 0 15px;
     }

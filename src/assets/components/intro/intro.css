@@ -6,10 +6,9 @@
     padding: 215px 0 30px;
     position: relative;
 }
+
 .intro__info {
-    /* width: 50%; */
     padding-top: 35px;
-    /* border: 1px solid #fff; */
 }
 .intro__descr {
     display: flex;
@@ -33,40 +32,41 @@
     box-shadow: 0 0 5px #ff9a00;
 }
 
-.intro__inner .blinking-star:nth-of-type(1) {
+/* STARS BEHAVIOUR */
+.intro__stars .blinking-star:nth-child(1) {
     width: 24px;
     height: 24px;
     animation-delay: 4s;
-    top: 75px;
+    top: 175px;
     right: -120px;
 }
-.intro__inner .blinking-star:nth-of-type(2) {
+.intro__stars .blinking-star:nth-child(2) {
     width: 40px;
     height: 40px;
     animation-delay: 2s;
     top: 400px;
     left: 600px;
 }
-.intro__inner .regular-star:nth-of-type(3) {
+.intro__stars .regular-star:nth-child(3) {
     animation-delay: 2s;
     top: 65px;
     left: 280px;
 }
-.intro__inner .regular-star:nth-of-type(4) {
+.intro__stars .regular-star:nth-child(4) {
     width: 32px;
     height: 31px;
     animation-delay: 3s;
     top: 10px;
     right: 320px;
 }
-.intro__inner .regular-star:nth-of-type(5) {
+.intro__stars .regular-star:nth-child(5) {
     width: 16px;
     height: 15px;
     animation-delay: 5s;
     top: 260px;
     left: -40px;
 }
-.intro__inner .regular-star:nth-of-type(6) {
+.intro__stars .regular-star:nth-child(6) {
     width: 36px;
     height: 35px;
     animation-delay: 1s;
@@ -74,27 +74,29 @@
     left: -180px;
 }
 
-.intro__inner .comet {
+.intro__stars .comet {
     top: 55px;
     left: -100%;
 }
 
-
+/* ANIMATIONS */
 @keyframes rotateIntroMoon {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(-360deg);
     }
 }
 
+/* DEVICE ADAPTATION */
 @media (max-width: 990px) {
     .intro__descr {
         font-size: 20px;
     }
 }
-@media (max-width: 770px) {
+
+@media (max-width: 785px) {
     .intro__inner {
         padding: 150px 0 30px;
     }
@@ -102,7 +104,7 @@
         width: 100%;
         margin-top: 30px;
     }
-    .intro__image{
+    .intro__image {
         margin-right: -200px;
         animation: rotateIntroMoon 60s linear infinite;
     }
@@ -111,11 +113,12 @@
         left: 80%;
     }
 }
-@media (max-width: 580px){
+
+@media (max-width: 580px) {
     .intro__inner {
         padding: 75px 0 15px;
     }
-    .intro__image{
+    .intro__image {
         margin-right: -290px;
         margin-left: 15px;
     }
@@ -126,7 +129,7 @@
     .intro__links {
         margin-top: 25px;
     }
-    .intro__links .button{
+    .intro__links .button {
         display: block;
     }
     .intro__links .btn-primary {
