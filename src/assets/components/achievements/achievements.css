@@ -94,7 +94,7 @@
         font-size: 50px;
     }
 }
-
+/* TABLETS */
 @media (max-width: 785px) {
     .achievements__inner {
         padding: 100px 0 50px;
@@ -112,7 +112,7 @@
         left: 100px;
     }
 }
-
+/* MOBILE PHONES */
 @media (max-width: 580px) {
     .achievements__inner {
         padding-top: 75px;

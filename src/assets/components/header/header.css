@@ -114,6 +114,7 @@ nav {
         margin-right: 25px;
     }
 }
+/* TABLETS */
 @media (max-width: 785px) {
     .header__inner {
         padding-top: 20px;
@@ -156,7 +157,7 @@ nav {
         left: 250px;
     }
 }
-
+/* MOBILE PHONES */
 @media (max-width: 580px) {
     .header__inner {
         padding-top: 10px;

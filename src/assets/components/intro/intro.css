@@ -10,6 +10,9 @@
 .intro__info {
     padding-top: 35px;
 }
+.intro__title{
+    text-align: left;
+}
 .intro__descr {
     display: flex;
     width: 75%;
@@ -95,7 +98,7 @@
         font-size: 20px;
     }
 }
-
+/* TABLETS */
 @media (max-width: 785px) {
     .intro__inner {
         padding: 150px 0 30px;
@@ -113,7 +116,7 @@
         left: 80%;
     }
 }
-
+/* MOBILE PHONES */
 @media (max-width: 580px) {
     .intro__inner {
         padding: 75px 0 15px;
