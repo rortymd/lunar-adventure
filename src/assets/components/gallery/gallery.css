@@ -1,0 +1,151 @@
+.gallery {
+    padding-bottom: 120px;
+    background-color: #060629;
+}
+.gallery__inner {
+    position: relative;
+}
+
+.gallery__title {
+    margin-bottom: 50px;
+}
+.gallery__subtitle {
+    margin-bottom: 25px;
+}
+
+/* CAROUSEL */
+.embla {
+    position: relative;
+    z-index: 2;
+}
+.gallery__photos {
+    position: relative;
+}
+.embla__viewport {
+    overflow: hidden;
+}
+.embla__container {
+    display: flex;
+}
+.embla__slide {
+    margin-right: 50px;
+    position: relative;
+    flex: 0 0 100%;
+}
+.embla__slide img {
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 8px;
+}
+/* CAROUSEL BUTTONS  */
+.embla-btn {
+    background-color: transparent;
+    transform: translateY(-50%);
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+.embla-btn svg {
+    position: relative;
+    z-index: 2;
+}
+.embla-btn path:last-child {
+    transition: 0.2s linear;
+}
+.embla-btn:hover path:last-child {
+    d: path(
+        "M0.4611351286696363,27.1345637272461 L13.569827032622708,8.865436192357024 L26.678518936576392,27.1345637272461 L0.4611351286696363,27.1345637272461 z"
+    );
+}
+.embla__prev {
+    left: -60px;
+}
+.embla__next {
+    right: -60px;
+}
+/* CAROUSEL DOTS */
+.embla__dots {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    position: relative;
+    z-index: 2;
+}
+.embla__dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.embla__dot.is-selected {
+    width: 56px;
+    background-color: #ff9a00;
+    border-radius: 50px;
+    cursor: default;
+}
+
+.gallery__planet {
+    position: absolute;
+    bottom: -110px;
+    right: -300px;
+    z-index: 1;
+}
+
+/* STARS BEHAVIOUR */
+#gallery__comet-1 {
+    animation-name: cometReverse;
+    top: 80px;
+    right: -100%;
+}
+#gallery__comet-2 {
+    width: 125px;
+    animation-delay: 5s;
+    bottom: 0;
+    left: -100%;
+}
+
+/* DEVICE ADAPTATION */
+@media (max-width: 1200px) {
+    .embla {
+        width: calc(100% - 80px);
+        margin: 0 auto;
+    }
+    .embla__prev {
+        left: -40px;
+    }
+    .embla__next {
+        right: -40px;
+    }
+    .gallery__planet {
+        right: -100px;
+    }
+}
+/* TABLETS */
+@media (max-width: 785px) {
+    .gallery {
+        padding-bottom: 50px;
+    }
+    .gallery__title {
+        margin-bottom: 25px;
+    }
+    .embla {
+        width: 100%;
+    }
+    .embla-btn {
+        display: none;
+    }
+    .gallery__planet {
+        transform: scale(0.9);
+    }
+}
+/* MOBILE PHONES */
+@media (max-width: 580px) {
+    .gallery__planet {
+        transform: scale(0.7);
+    }
+}

@@ -10,13 +10,13 @@
 .intro__info {
     padding-top: 35px;
 }
-.intro__title{
+.intro__title {
     text-align: left;
 }
 .intro__descr {
     display: flex;
     width: 75%;
-    margin-top: 45px;
+    margin-top: 50px;
     font-size: 24px;
     font-weight: 500;
     line-height: 120%;
@@ -105,7 +105,7 @@
     }
     .intro__descr {
         width: 100%;
-        margin-top: 30px;
+        margin-top: 25px;
     }
     .intro__image {
         margin-right: -200px;

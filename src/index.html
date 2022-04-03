@@ -146,10 +146,87 @@
                 </div>
             </div>
         </section>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__inner">
+                    <h2 class="title gallery__title">
+                        Gallery
+                    </h2>
+                    <h3 class="subtitle gallery__subtitle">
+                        <span class="subtitle-highlight">Photo reports</span> from our flights
+                    </h3>
+                    <div class="embla">
+                        <div class="gallery__photos">
+                            <div class="embla__viewport">
+                                <div class="embla__container">
+                                    <div class="embla__slide">
+                                        <img src="./assets/components/gallery/gallery-img/moon-photo.jpg" alt="moon">
+                                    </div>
+                                    <div class="embla__slide">
+                                        <img src="./assets/components/gallery/gallery-img/moon-photo.jpg" alt="moon">
+                                    </div>
+                                    <div class="embla__slide">
+                                        <img src="./assets/components/gallery/gallery-img/moon-photo.jpg" alt="moon">
+                                    </div>
+                                    <div class="embla__slide">
+                                        <img src="./assets/components/gallery/gallery-img/moon-photo.jpg" alt="moon">
+                                    </div>
+                                    <div class="embla__slide">
+                                        <img src="./assets/components/gallery/gallery-img/moon-photo.jpg" alt="moon">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="embla-btn embla__prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="36">
+                                    <g>
+                                        <path
+                                            d="M25.0708 0.20648C24.7909 0.0536017 24.4759 -0.016661 24.1602 0.00333201C23.8445 0.023325 23.5401 0.132808 23.2801 0.319878L0.743691 16.5196C0.514095 16.6859 0.326589 16.9074 0.197115 17.1652C0.0676421 17.4229 3.05176e-05 17.7093 3.05176e-05 18C3.05176e-05 18.2907 0.0676421 18.5772 0.197115 18.8349C0.326589 19.0927 0.514095 19.3141 0.743691 19.4805L23.2801 35.6802C23.5401 35.8671 23.8445 35.9765 24.1602 35.9966C24.4758 36.0167 24.7908 35.9468 25.071 35.7944C25.3511 35.642 25.5858 35.413 25.7495 35.132C25.9133 34.8511 25.9999 34.529 26 34.2006V1.80125C26.0001 1.47269 25.9135 1.15038 25.7497 0.869261C25.5859 0.588141 25.3512 0.358932 25.0708 0.20648ZM22.5329 30.7645L4.77597 18.0009L22.5329 5.23738V30.7645Z"
+                                            fill="#FF9A00" />
+                                        <path fill="#FF9A00" fill-rule="nonzero"
+                                            d="M0.4611351286696363,27.1345637272461 L13.569827032622708,26.865436192357024 L26.678518936576392,27.1345637272461 L0.4611351286696363,27.1345637272461 z"
+                                            style="color: rgb(0, 0, 0);"
+                                            transform="rotate(-90 13.569826126098638,18.000000000000004) " />
+                                    </g>
+                                </svg>
+                            </button>
+                            <button class="embla-btn embla__next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="36"
+                                    style="transform: scale(-1, 1)">
+                                    <g>
+                                        <path
+                                            d="M25.0708 0.20648C24.7909 0.0536017 24.4759 -0.016661 24.1602 0.00333201C23.8445 0.023325 23.5401 0.132808 23.2801 0.319878L0.743691 16.5196C0.514095 16.6859 0.326589 16.9074 0.197115 17.1652C0.0676421 17.4229 3.05176e-05 17.7093 3.05176e-05 18C3.05176e-05 18.2907 0.0676421 18.5772 0.197115 18.8349C0.326589 19.0927 0.514095 19.3141 0.743691 19.4805L23.2801 35.6802C23.5401 35.8671 23.8445 35.9765 24.1602 35.9966C24.4758 36.0167 24.7908 35.9468 25.071 35.7944C25.3511 35.642 25.5858 35.413 25.7495 35.132C25.9133 34.8511 25.9999 34.529 26 34.2006V1.80125C26.0001 1.47269 25.9135 1.15038 25.7497 0.869261C25.5859 0.588141 25.3512 0.358932 25.0708 0.20648ZM22.5329 30.7645L4.77597 18.0009L22.5329 5.23738V30.7645Z"
+                                            fill="#FF9A00" />
+                                        <path fill="#FF9A00" fill-rule="nonzero"
+                                            d="M0.4611351286696363,27.1345637272461 L13.569827032622708,26.865436192357024 L26.678518936576392,27.1345637272461 L0.4611351286696363,27.1345637272461 z"
+                                            style="color: rgb(0, 0, 0);"
+                                            transform="rotate(-90 13.569826126098638,18.000000000000004) " />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="embla__dots"></div>
+                    <script type="text/template" id="embla-dot-template">
+                        <button class="embla__dot" type="button"></button>
+                    </script>
+                    <div class="gallery__planet">
+                        <img src="./assets/components/gallery/gallery-img/gallery-planet.png" alt="red planet">
+                    </div>
+                    <div class="gallery__stars">
+                        <img src="./assets/components/stars/stars-img/comet-reverse.svg" alt="comet" class="star comet"
+                            id="gallery__comet-1">
+                        <img src="./assets/components/stars/stars-img/comet.svg" alt="comet" class="star comet"
+                            id="gallery__comet-2">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script src="assets/scripts/script.js"></script>
+    <script src="./assets/scripts/script.js"></script>
     <script src="./assets/components/achievements/achievements.js"></script>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="./assets/components/gallery/gallery.js"></script>
 </body>
 
 </html>

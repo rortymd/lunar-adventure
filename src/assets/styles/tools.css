@@ -5,6 +5,7 @@
     padding: 0 25px;
 }
 
+/* TITLE */
 .title {
     color: #f7f7f7;
     font-size: 60px;
@@ -22,6 +23,7 @@
     color: #ff9a00;
 }
 
+/* BUTTONS */
 .button {
     display: inline-block;
     color: #f7f7f7;

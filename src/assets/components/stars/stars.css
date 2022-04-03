@@ -38,12 +38,25 @@
 }
 
 @keyframes comet {
-    10%{
+    10% {
         opacity: 1;
     }
-    20%, 100%{
+    20%,
+    100% {
         transform: rotate(10deg) translateY(-30px) scale(0.5);
         opacity: 0;
         left: 35%;
+    }
+}
+
+@keyframes cometReverse {
+    10% {
+        opacity: 1;
+    }
+    20%,
+    100% {
+        transform: rotate(-10deg) translateY(-30px) scale(0.5);
+        opacity: 0;
+        right: 35%;
     }
 }
