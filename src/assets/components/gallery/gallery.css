@@ -141,11 +141,12 @@
     }
     .gallery__planet {
         transform: scale(0.9);
+        bottom: -50px;
     }
 }
 /* MOBILE PHONES */
 @media (max-width: 580px) {
     .gallery__planet {
-        transform: scale(0.7);
+        transform: scale(0.5);
     }
 }
