@@ -1,0 +1,134 @@
+.tickets {
+    background: linear-gradient(
+        180deg,
+        #060629,
+        #080d2d,
+        #101938,
+        #1d2949,
+        #2e3e60,
+        #425779,
+        #587294,
+        #6e8eae,
+        #83a7c6,
+        #95bcd9,
+        #a1cae6,
+        #a6cfeb
+    );
+}
+.tickets__inner {
+    padding: 60px 0 120px;
+    position: relative;
+}
+
+.tickets__title {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+.tickets__subtitle {
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+/* BUY A TICKET FORM  */
+.tickets__form {
+    padding: 35px 0;
+    background-color: #131334;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+.tickets__form-section {
+    max-width: 540px;
+    margin: 0 auto 25px;
+}
+.tickets__form-section:last-child {
+    margin-bottom: 0;
+}
+.tickets__form-select {
+    background-image: url("./tickets-img/select-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+    appearance: none;
+    cursor: pointer;
+}
+.tickets__form-select option {
+    color: #000;
+}
+/* SUBMIT BUTTON */
+.tickets__form-submit {
+    display: block;
+    padding: 15px 60px;
+    margin: 0 auto;
+}
+
+/* PLANETS COORDINATES */
+.tickets__planet img {
+    position: absolute;
+    z-index: 1;
+}
+#tickets__planet-1 {
+    top: 0;
+    left: -320px;
+}
+#tickets__planet-2 {
+    bottom: 160px;
+    right: -190px;
+}
+
+/* STARS BEHAVIOUR */
+#tickets__comet {
+    width: 110px;
+    animation-name: cometReverse;
+    top: 80px;
+    right: -100%;
+}
+
+/* DEVICE ADAPTATION */
+@media (max-width: 1200px) {
+    #tickets__planet-1 {
+        left: -200px;
+    }
+    #tickets__planet-2 {
+        right: -100px;
+        bottom: 100px;
+    }
+}
+/* TABLETS */
+@media (max-width: 785px) {
+    .tickets__inner {
+        padding: 30px 0 60px;
+    }
+    .tickets__title {
+        margin-bottom: 25px;
+    }
+    .tickets__form {
+        padding: 15px;
+    }
+    .tickets__form-section {
+        width: 100%;
+    }
+    #tickets__planet-1 {
+        transform: scale(0.9);
+        left: -150px;
+        top: 150px;
+    }
+    #tickets__planet-2 {
+        transform: scale(0.9);
+        right: -50px;
+        bottom: 0px;
+    }
+}
+/* MOBILE PHONES */
+@media (max-width: 580px) {
+    #tickets__planet-1 {
+        left: -100px;
+        top: 100px;
+        transform: scale(0.5);
+    }
+    #tickets__planet-2 {
+        transform: scale(0.5);
+        bottom: -30px;
+    }
+}

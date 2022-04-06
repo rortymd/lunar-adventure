@@ -37,3 +37,14 @@ function toggleFlashlight(event) {
 }
 
 flashlight.onclick = toggleFlashlight;
+
+// BUY A TICKET FORM
+const callMeNotification = document.querySelector("#call__notification");
+const ticketsForm = document.querySelector(".tickets__form");
+
+function sendCallRequest(event) {
+    event.preventDefault();
+    callMeNotification.style.animationName = "showNotification";
+}
+
+ticketsForm.onsubmit = sendCallRequest;

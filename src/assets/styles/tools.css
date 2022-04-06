@@ -1,3 +1,4 @@
+/* CONTAINER  */
 .container {
     width: 100%;
     max-width: 1110px;
@@ -47,6 +48,75 @@
     background-color: #ff9a00;
 }
 
+/* FORM CONTROLS */
+.form-section-label {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 120%;
+    cursor: pointer;
+}
+.form-section-input {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: inherit;
+    color: #ffffff;
+    border: 2px solid #f7f7f7;
+    border-radius: 8px;
+    outline: none;
+    font-size: 24px;
+    line-height: 125%;
+    transition: 0.3s ease;
+}
+.form-section-input:focus {
+    border-color: #ff9a00;
+}
+.form-section-input::placeholder {
+    color: rgba(255, 154, 0, 0.3);
+}
+
+/* NOTIFICATION  */
+.notification {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    color: #f7f7f7;
+    background-color: #ff9a00;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    transform: translateY(-100%);
+    animation: 5s ease-out 1;
+    position: fixed;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+/* ANIMATIONS */
+@keyframes showNotification {
+    0%{
+        transform: translateY(-100%);
+    }
+    10%{
+        transform: translateY(0);
+        padding-top: 30px;
+    }
+    20%{
+        padding-top: 15px;
+    }
+    90%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
 /* DEVICE ADAPTATION */
 @media (max-width: 990px) {
     .container {
@@ -74,6 +144,18 @@
     .subtitle {
         text-align: center;
     }
+    .form-section-label {
+        font-size: 16px;
+    }
+    .form-section-input {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .notification{
+        max-width: 400px;
+        padding: 10px;
+        font-size: 20px;
+    }
 }
 /* MOBILE PHONES */
 @media (max-width: 580px) {
@@ -81,7 +163,7 @@
         padding: 0 10px;
     }
     .title {
-        font-size: 35px;
+        font-size: 36px;
     }
     .subtitle {
         font-size: 24px;

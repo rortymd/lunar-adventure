@@ -92,6 +92,7 @@
                 </div>
             </div>
         </section>
+        <!-- INTRO SECTION ENDS HERE -->
         <section class="achievements">
             <div class="container">
                 <div class="achievements__inner">
@@ -126,6 +127,7 @@
                 </div>
             </div>
         </section>
+        <!-- ACHIEVMENTS SECTION ENDS HERE -->
         <section class="aboutus">
             <div class="container">
                 <div class="aboutus__inner">
@@ -164,6 +166,7 @@
                 </div>
             </div>
         </section>
+        <!-- ABOUT US SECTION ENDS HERE -->
         <section class="gallery">
             <div class="container">
                 <div class="gallery__inner">
@@ -238,6 +241,7 @@
                 </div>
             </div>
         </section>
+        <!-- GALLERY SECTION ENDS HERE -->
         <section class="prices">
             <div class="container">
                 <div class="prices__inner">
@@ -279,6 +283,63 @@
                 </div>
             </div>
         </section>
+        <!-- PRICES SECTION ENDS HERE -->
+        <section class="tickets">
+            <div class="container">
+                <div class="tickets__inner">
+                    <h2 class="title tickets__title">
+                        Buy a ticket
+                    </h2>
+                    <h3 class="subtitle tickets__subtitle">
+                        <span class="subtitle-highlight">Fill the required fields</span> by choosing the appropriate
+                        plan, and wait for a call from our operator for further actions
+                    </h3>
+                    <form class="tickets__form">
+                        <p class="form-section tickets__form-section">
+                            <label for="tickets-name" class="form-section-label">
+                                Your name:
+                            </label>
+                            <input type="text" id="tickets-name" name="name" class="form-section-input"
+                                placeholder="Patrick" required>
+                        </p>
+                        <p class="form-section tickets__form-section" id="tickets__form-select">
+                            <label for="tickets-select" class="form-section-label">
+                                Pricing plan:
+                            </label>
+                            <select name="tickets-select" id="tickets-select"
+                                class="form-section-input tickets__form-select">
+                                <option value="basic" selected>Basic</option>
+                                <option value="standart">Standart</option>
+                                <option value="premium">Premium</option>
+                            </select>
+                        </p>
+                        <p class="form-section tickets__form-section">
+                            <label for="tickets-number" class="form-section-label">
+                                Your phone number:
+                            </label>
+                            <input type="tel" id="tickets-number" name="phone" class="form-section-input"
+                                pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" placeholder="+1 (234) 567 89-00"
+                                required>
+                        </p>
+                        <button type="submit" class="button btn-primary tickets__form-submit">Call me please</button>
+                    </form>
+                    <div class="tickets__planet">
+                        <img src="./assets/components/tickets/tickets-img/tickets-planet-1.svg" alt="blue planet"
+                            id="tickets__planet-1">
+                        <img src="./assets/components/tickets/tickets-img/tickets-planet-2.svg" alt="peach planet"
+                            id="tickets__planet-2">
+                    </div>
+                    <div class="tickets__stars">
+                        <img src="./assets/components/stars/stars-img/comet-reverse.svg" alt="comet" class="star comet"
+                            id="tickets__comet" />
+                    </div>
+                    <div class="notification" id="call__notification">
+                        <p>Fine, we will call you soon!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TICKETS SECTION ENDS HERE -->
     </main>
 
     <script src="./assets/scripts/script.js"></script>

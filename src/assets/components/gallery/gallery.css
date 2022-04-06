@@ -89,6 +89,7 @@
     cursor: default;
 }
 
+/* PLANETS COORDINATES */
 .gallery__planet {
     position: absolute;
     bottom: -110px;
