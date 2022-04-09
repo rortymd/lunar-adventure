@@ -1,3 +1,5 @@
+"use strict";
+
 // HEADER
 const nav = document.querySelector(".header__nav");
 const navBtn = document.querySelector(".header__nav-btn");
@@ -48,3 +50,19 @@ function sendCallRequest(event) {
 }
 
 ticketsForm.onsubmit = sendCallRequest;
+
+// ACCORDION
+
+const accordionItem = document.querySelectorAll(".accordion__item");
+const accordionBtn = document.querySelectorAll(".accordion__item-title");
+
+for (let i = 0; i < accordionBtn.length; i++) {
+    accordionBtn[i].onclick = function () {
+        for (let k = 0; k < accordionItem.length; k++) {
+            if (k !== i) {
+                accordionItem[k].classList.remove("active");
+            }
+        }
+        accordionItem[i].classList.toggle("active");
+    };
+}

@@ -5,13 +5,6 @@
     padding-bottom: 30px;
 }
 
-.prices__title {
-    margin-bottom: 50px;
-}
-.prices__subtitle {
-    margin-bottom: 25px;
-}
-
 /* PRICES BLOCKS  */
 .prices__wrapper {
     display: flex;

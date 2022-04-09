@@ -1,19 +1,21 @@
 /* CONTAINER  */
 .container {
     width: 100%;
-    max-width: 1110px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 0 25px;
 }
 
 /* TITLE */
 .title {
+    margin-bottom: 50px;
     color: #f7f7f7;
     font-size: 60px;
     font-weight: 700;
     line-height: 120%;
 }
 .subtitle {
+    margin-bottom: 25px;
     color: #ffffff;
     font-size: 32px;
     font-weight: 500;
@@ -49,6 +51,9 @@
 }
 
 /* FORM CONTROLS */
+.form-section{
+    text-align: left;
+}
 .form-section-label {
     margin-bottom: 5px;
     font-size: 20px;
@@ -82,13 +87,12 @@
     padding: 15px 25px;
     color: #f7f7f7;
     background-color: #ff9a00;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     text-align: center;
     font-size: 26px;
     font-weight: 600;
-    transform: translateY(-100%);
+    transform: translateY(-110%);
     animation: 5s ease-out 1;
     position: fixed;
     top: 0;
@@ -105,12 +109,14 @@
     10%{
         transform: translateY(0);
         padding-top: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     }
     20%{
         padding-top: 15px;
     }
     90%{
         transform: translateY(0);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
     }
     100%{
         transform: translateY(-100%);
@@ -135,9 +141,11 @@
         padding: 0 15px;
     }
     .title {
+        margin-bottom: 25px;
         font-size: 40px;
     }
     .subtitle {
+        margin-bottom: 15px;
         font-size: 28px;
     }
     .title,
