@@ -1,0 +1,131 @@
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+
+/* COMMON STYLES */
+.footer__text {
+    margin-bottom: 12px;
+    color: #f7f7f7;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+}
+a.footer__text {
+    display: inline-block;
+    transition: 0.5s ease;
+    outline: none;
+}
+a.footer__text:hover,
+a.footer__text:focus {
+    color: #ff9a00;
+}
+.footer__text-title {
+    font-weight: 500;
+}
+
+/* FIRST SECTION */
+.footer__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footer__logo:hover .footer__logo-img svg {
+    animation: rotateMoon 0.5s ease;
+}
+.footer__logo-text {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    margin-left: 8px;
+}
+.footer__logo-text span {
+    font-family: "Hellenica";
+    font-size: 20px;
+    font-variant: small-caps; /* use it to show the alternative font symbols */
+    text-transform: uppercase;
+    color: #f7f7f7;
+    line-height: 26px;
+}
+.footer__logo-text span:first-child {
+    margin-top: -7px; /* align text to match the layout design */
+}
+
+/* SECOND SECTION */
+.footer__nav-list li:last-child a {
+    margin-bottom: 0;
+}
+
+/* THIRD SECTION */
+.footer__social {
+    max-width: 40%;
+}
+.social__subscribe-section {
+    display: flex;
+}
+.social__subscribe-input {
+    max-width: 275px;
+    margin-right: 12px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.social__subscribe-input::placeholder {
+    color: #e4e4e4;
+}
+.social__subscribe-submit {
+    padding: 10px 25px;
+}
+
+/* DEVICE ADAPTATION */
+/* TABLETS */
+@media (max-width: 785px) {
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 75px;
+    }
+    .footer__section {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer__social {
+        max-width: 75%;
+    }
+    .social__subscribe-section {
+        justify-content: center;
+    }
+}
+/* MOBILE PHONES */
+@media (max-width: 580px) {
+    .footer__inner {
+        padding-bottom: 50px;
+    }
+    .footer__section {
+        margin-bottom: 20px;
+    }
+    .footer__text {
+        margin-bottom: 7px;
+    }
+    .footer__company {
+        order: 3;
+    }
+    .footer__logo {
+        margin-bottom: 10px;
+    }
+    .footer__social {
+        margin-bottom: 25px;
+    }
+    .social__subscribe-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social__subscribe-input {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .social__subscribe-submit {
+        width: 100%;
+    }
+}

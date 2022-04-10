@@ -1,5 +1,3 @@
-"use strict";
-
 // HEADER
 const nav = document.querySelector(".header__nav");
 const navBtn = document.querySelector(".header__nav-btn");
@@ -66,3 +64,26 @@ for (let i = 0; i < accordionBtn.length; i++) {
         accordionItem[i].classList.toggle("active");
     };
 }
+
+// Q&A FORM
+
+const questionsForm = document.querySelector(".questions__form");
+
+questionsForm.onsubmit = sendCallRequest;
+
+// SUBSCRIBE NEWSLETTER
+
+const subscribeInput = document.querySelector(".social__subscribe-input");
+const subscribeSubmit = document.querySelector(".social__subscribe-submit");
+const subscribeNotification = document.querySelector(
+    "#subscribe__notification"
+);
+
+function subscribeNewsletter(input) {
+    input.value = input.value.trim();
+    if (input.value !== "") {
+        subscribeNotification.style.animationName = "showNotification";
+    }
+}
+
+subscribeSubmit.onclick = () => subscribeNewsletter(subscribeInput);

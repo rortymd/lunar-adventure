@@ -32,7 +32,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-    background-color: #FF9A00;
+    background-color: #ff9a00;
 }
 
 .hamburger-box {
@@ -52,7 +52,7 @@
 .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #FF9A00;
+    background-color: #ff9a00;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -79,14 +79,14 @@
 }
 .hamburger--emphatic .hamburger-inner::before {
     left: 0;
-    transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear,
-        left 0.125s 0.175s ease-in;
+    transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+        top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
 }
 .hamburger--emphatic .hamburger-inner::after {
     top: 10px;
     right: 0;
-    transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear,
-        right 0.125s 0.175s ease-in;
+    transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+        top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
 }
 .hamburger--emphatic.is-active .hamburger-inner {
     transition-delay: 0s;
