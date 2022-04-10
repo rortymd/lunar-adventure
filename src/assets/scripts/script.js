@@ -1,4 +1,17 @@
 // HEADER
+const header = document.querySelector(".header");
+
+window.onscroll = () => {
+    if (window.pageYOffset >= 300) {
+        header.classList.add("header-fixed");
+        document.body.style.paddingTop = window.getComputedStyle(header).height;
+    } else {
+        header.classList.remove("header-fixed");
+        document.body.style.paddingTop = "0";
+    }
+};
+
+// NAVIGATION
 const nav = document.querySelector(".header__nav");
 const navBtn = document.querySelector(".header__nav-btn");
 navBtn.onclick = toggleNav;
@@ -6,7 +19,38 @@ navBtn.onclick = toggleNav;
 function toggleNav() {
     nav.classList.toggle("show-nav");
     navBtn.classList.toggle("is-active");
+    document.body.classList.toggle("overflow-hidden");
 }
+// HANDLE LINKS CLICK
+document.querySelectorAll(".logo").forEach((anchor) => {
+    anchor.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+
+document.querySelectorAll(".anchor-link").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        let elOffset = document.querySelector(
+            this.getAttribute("href")
+        ).offsetTop;
+        let headerHeight = parseInt(window.getComputedStyle(header).height);
+        let scrollPosition = elOffset - headerHeight;
+
+        window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+
+        if (
+            nav.className.includes("show-nav") &&
+            navBtn.className.includes("is-active")
+        ) {
+            document.body.classList.remove("overflow-hidden");
+            nav.classList.remove("show-nav");
+            navBtn.classList.remove("is-active");
+        }
+    });
+});
 
 // ABOUT US
 let flashlightActive = true;
@@ -50,7 +94,6 @@ function sendCallRequest(event) {
 ticketsForm.onsubmit = sendCallRequest;
 
 // ACCORDION
-
 const accordionItem = document.querySelectorAll(".accordion__item");
 const accordionBtn = document.querySelectorAll(".accordion__item-title");
 
@@ -66,13 +109,11 @@ for (let i = 0; i < accordionBtn.length; i++) {
 }
 
 // Q&A FORM
-
 const questionsForm = document.querySelector(".questions__form");
 
 questionsForm.onsubmit = sendCallRequest;
 
 // SUBSCRIBE NEWSLETTER
-
 const subscribeInput = document.querySelector(".social__subscribe-input");
 const subscribeSubmit = document.querySelector(".social__subscribe-submit");
 const subscribeNotification = document.querySelector(

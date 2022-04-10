@@ -2,6 +2,11 @@
 
 My first portfolio project
 
+My socials:
+E-mail - 45ryirtimd@gmail.com
+GitHub - https://github.com/DmitriyR54
+Telegram - @dmitriyr54
+
 Used libraries and services:
 
 1. Gradient generator - https://learnui.design/tools/gradient-generator.html
